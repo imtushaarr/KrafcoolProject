@@ -1,0 +1,123 @@
+body {
+    background: #00091B;
+    color: #fff;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {top: 20%; opacity: 0;}
+    to {top: 100; opacity: 1;}
+    
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {top: 20%; opacity: 0;}
+    to {top: 100; opacity: 1;}
+    
+  }
+
+  #header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px 60px;
+  }
+
+  .left{
+    width: 150px;
+  }
+
+  .left img{
+    width: 100%;
+  }
+
+  .right{
+    display: flex;
+  }
+
+  .right button{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
+    &:hover{
+        background-color: #00091B;
+        border: 2px solid white;
+        color: white;
+    }
+  }
+
+  .right button i{
+    font-size: 16px;
+  }
+
+  
+  .wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    animation: fadeIn 1000ms ease;
+    -webkit-animation: fadeIn 1000ms ease;
+    
+  }
+  
+  h1 {
+    font-size: 100px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  .dot {
+    color: #ffffff;
+  }
+  
+  p {
+    text-align: center;
+    margin: 18px;
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    
+  }
+  
+  .icons {
+    text-align: center;
+    
+  }
+  
+  .icons i {
+    color: #00091B;
+    background: #fff;
+    height: 15px;
+    width: 15px;
+    padding: 13px;
+    margin: 0 10px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    transition: all 200ms ease;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .icons i:hover, .icons i:active {
+    color: #fff;
+    background: none;
+    cursor: pointer !important;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    text-decoration: none;
+    
+  }
